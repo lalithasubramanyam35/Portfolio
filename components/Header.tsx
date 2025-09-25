@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
+// FIX: Add Experience to the navigation links array.
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
+  { name: 'Education & Achievements', href: '#experience' },
   { name: 'Contact', href: '#contact' },
 ];
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onShowResume: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onShowResume }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,8 +31,10 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
   
-  const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank');
+  const handleResumeClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    onShowResume();
+    setIsMenuOpen(false);
   };
 
   return (

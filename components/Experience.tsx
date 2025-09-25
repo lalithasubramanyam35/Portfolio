@@ -6,7 +6,7 @@ const Experience: React.FC = () => {
   return (
     <AnimatedSection id="experience">
       <h2 className="text-3xl font-bold mb-12 text-light text-center">
-        <span className="text-accent-secondary font-mono mr-3 text-2xl">04.</span> My Work XP
+        <span className="text-accent-secondary font-mono mr-3 text-2xl">04.</span> Education & Achievements
       </h2>
       <div className="relative max-w-3xl mx-auto">
         {/* Vertical line */}

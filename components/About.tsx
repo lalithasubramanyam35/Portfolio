@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
-const technologies = ['React', 'TypeScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'Figma'];
+const technologies = ['C', 'C++', 'HTML', 'JavaScript', 'GitHub', 'VS Code'];
 
 const About: React.FC = () => {
   return (
@@ -13,13 +13,10 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
         <div className="md:col-span-3 text-dark space-y-4">
           <p>
-            Hey! I'm Lalitha, a frontend engineer who's basically a professional pixel-pusher. My web dev journey started way back, customizing Tumblr themes (if you know, you know). Turns out that obsession with making things look cool was actually a career path.
+            I'm a motivated and passionate aspiring software developer with a strong foundation in programming and a hunger for learning. A proactive problem-solver with experience in building web applications and a proven ability to collaborate effectively in team environments.
           </p>
           <p>
-            Today, I've leveled up from blog themes to building complex apps. I’ve worked with startups, huge corporations, and everything in between. My goal is always the same: build accessible, performant, and visually dope digital experiences.
-          </p>
-          <p>
-            Here's the tech I've been vibing with recently:
+            I'm seeking to apply my technical skills and an eagerness to grow to contribute to meaningful projects. Here are a few technologies I'm proficient with:
           </p>
           <div className="flex flex-wrap gap-2">
             {technologies.map(tech => (

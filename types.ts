@@ -9,7 +9,7 @@ export interface SkillCategory {
 
 export interface Project {
   title: string;
-  description: string;
+  description: string[];
   tags: string[];
   imageUrl: string;
   liveUrl?: string;

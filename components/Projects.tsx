@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
                 )}
               </div>
               <h3 className="text-xl font-bold text-light mb-2 group-hover:text-accent transition-colors duration-300">{project.title}</h3>
-              <p className="text-dark text-sm flex-grow mb-4">{project.description}</p>
+              <p className="text-dark text-sm flex-grow mb-4">{project.description.join(' ')}</p>
               <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tags.map(tag => (
                   <span key={tag} className="bg-primary text-accent-secondary text-xs font-mono px-2 py-1 rounded">{tag}</span>
