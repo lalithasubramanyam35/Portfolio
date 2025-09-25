@@ -17,9 +17,10 @@ const Footer: React.FC = () => {
                     {TWITTER_ICON}
                 </a>
             </div>
-            <p className="text-dark font-mono text-xs">
-                Coded with ☕ & vibes by Lalitha Subramanyam
-            </p>
+            <div className="text-center text-dark font-mono text-xs space-y-1">
+                <p>Designed & Built by Lalitha Subramanyam.</p>
+                <p>&copy; 2025 Lalitha Subramanyam. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
   );
